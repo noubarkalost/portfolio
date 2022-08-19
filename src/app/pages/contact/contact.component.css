@@ -31,7 +31,7 @@
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
-  height: calc(100vh - 160px);
+  height: calc(100vh - 190px);
 }
 
 .image-container {
@@ -72,5 +72,8 @@
 @media all and (max-width: 499px) {
   .data-container > img {
     width: 15%;
+  }
+  data-container > a {
+    margin: 0px;
   }
 }
