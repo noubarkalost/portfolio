@@ -69,6 +69,7 @@
   scale: 1.1;
   opacity: 1;
 }
+
 @media all and (max-width: 499px) {
   .data-container > img {
     width: 15%;
