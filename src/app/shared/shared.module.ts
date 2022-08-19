@@ -5,7 +5,6 @@ import {RouterModule} from "@angular/router";
 import {HeaderComponent} from "./header/header.component";
 import { FooterComponent } from './footer/footer.component';
 import { ButtonComponent } from './button/button.component';
-import { CardComponent } from './card/card.component';
 
 
 
@@ -14,7 +13,6 @@ import { CardComponent } from './card/card.component';
     HeaderComponent,
     FooterComponent,
     ButtonComponent,
-    CardComponent
   ],
   imports: [
     CommonModule,
@@ -23,7 +21,6 @@ import { CardComponent } from './card/card.component';
   exports: [
     HeaderComponent,
     FooterComponent,
-    CardComponent
   ]
 })
 export class SharedModule { }
