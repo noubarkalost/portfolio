@@ -14,3 +14,10 @@ html
 body {
   font-family: "American Typewriter";
 }
+
+
+@media all and (max-width: 499px) {
+  html {
+    background:url('assets/images/backgroundsmall.jpg')no-repeat center center fixed;
+  }
+}
