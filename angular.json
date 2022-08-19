@@ -80,13 +80,12 @@
           }
         },
         "test": {
-          "builder": "@@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "outputPath": "docs",
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
-            "index": "src/index.html",
+            "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
               "src/assets"
