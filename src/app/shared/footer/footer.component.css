@@ -1,0 +1,16 @@
+.footer-container{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  margin: 20px;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 70%;
+}
+
+p {
+  padding: 10PX;
+  font-family: "American Typewriter";
+}
