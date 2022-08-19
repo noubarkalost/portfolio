@@ -1,3 +1,31 @@
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-2000px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(2000px);
+    opacity: 0;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .footer-container{
   position: fixed;
   display: flex;
@@ -7,6 +35,14 @@
   padding: 10px 10px 0px 10px;
   bottom: 0;
   width: 70%;
+  align-items: center;
+}
+
+.text-container {
+  animation: 0.8s ease-out slideInFromLeft ;
+}
+.button-container {
+  animation: 0.8s ease-out slideInFromRight ;
 }
 
 @media all and (max-width: 499px) {
