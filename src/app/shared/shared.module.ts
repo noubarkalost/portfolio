@@ -18,9 +18,10 @@ import { ButtonComponent } from './button/button.component';
     CommonModule,
     RouterModule
   ],
-  exports: [
-    HeaderComponent,
-    FooterComponent,
-  ]
+    exports: [
+        HeaderComponent,
+        FooterComponent,
+        ButtonComponent,
+    ]
 })
 export class SharedModule { }
