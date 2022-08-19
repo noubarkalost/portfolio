@@ -54,8 +54,22 @@
   }
 }
 
+p, li{
+  text-shadow: 1px 1px 5px;
+}
+a {
+  color: black;
+  font-family: "American Typewriter";
+}
+
+
 
 .about-container{
+  background: #D5D6D6;
+  padding: 10px;
+  opacity: 0.8;
+  border: 0.8px solid floralwhite;
+  border-radius: 20px;
   display: flex;
   justify-content: space-between;
   width: 100%;
