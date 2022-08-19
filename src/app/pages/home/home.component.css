@@ -25,6 +25,28 @@
     opacity: 1;
   }
 }
+p{
+  text-shadow: 1px 1px 5px;
+}
+a {
+  color: black;
+  font-family: "American Typewriter";
+}
+
+.container {
+  background: #D5D6D6;
+  padding: 10px;
+  opacity: 0.8;
+  border: 0.8px solid floralwhite;
+  border-radius: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1440px;
+  height: calc(100vh - 180px);
+  overflow: hidden;
+}
 
 .image-container {
   width: 20%;
