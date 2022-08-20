@@ -27,6 +27,12 @@
 }
 
 .container {
+  background: #D5D6D6;
+  padding: 10px;
+  opacity: 0.8;
+  border: 0.8px solid floralwhite;
+  border-radius: 20px;
+  box-shadow: 5px 10px #888888;
   display: flex;
   justify-content: space-between;
   width: 100%;
