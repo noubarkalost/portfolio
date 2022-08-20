@@ -39,6 +39,7 @@ a {
   opacity: 0.8;
   border: 0.8px solid floralwhite;
   border-radius: 20px;
+  box-shadow: 5px 10px #888888;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,7 +74,6 @@ a {
 
 .card-container {
   width: 50%;
-  scale: 1;
   text-align: center;
   animation: 1.5s ease-out slideInFromRight ;
   transition: all 0.5s ease;
