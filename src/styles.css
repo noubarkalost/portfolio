@@ -1,23 +1,17 @@
 @import '~bulma/css/bulma.css';
-html
-{
-  margin:0px;
+
+html {
+  margin:0;
   height:100%;
   width:100%;
   background:url('assets/images/background.jpeg')no-repeat center center fixed;
+  background-position-x: 100%;
   -webkit-background-size:cover;
   -o-background-size:cover;
   -moz-background-size:cover;
   background-size:cover;
-  overflow: hidden;
 }
+
 body {
   font-family: "American Typewriter";
-}
-
-
-@media all and (max-width: 499px) {
-  html {
-    background:url('assets/images/backgroundsmall.jpg')no-repeat center center fixed;
-  }
 }

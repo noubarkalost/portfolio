@@ -39,13 +39,12 @@ a {
   opacity: 0.8;
   border: 0.8px solid floralwhite;
   border-radius: 20px;
-  box-shadow: 5px 10px #888888;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   max-width: 1440px;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 144px);
   overflow: hidden;
 }
 
@@ -108,7 +107,7 @@ a {
 
 @media all and (max-width: 600px) {
   .card-container {
-    width: 100%;;
+    width: 100%;
   }
   .image-container {
     width: 100%;
@@ -116,6 +115,10 @@ a {
 
   .container {
     flex-direction: column;
+    gap: 20px;
+    border-radius: 0;
+    border-color: transparent;
+    height: calc(100vh - 135px);
   }
 }
 
