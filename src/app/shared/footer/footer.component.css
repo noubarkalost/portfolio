@@ -27,15 +27,13 @@
 }
 
 .footer-container{
-  position: fixed;
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 20px;
   padding: 10px 10px 0px 10px;
   bottom: 0;
-  width: 70%;
-  align-items: center;
+  width: 100%;
 }
 
 .text-container {
@@ -53,9 +51,5 @@
   }
   .footer-container {
   width: 100%;
-  }
-
-  .button-container {
-    width: 60%;
   }
 }
