@@ -25,7 +25,7 @@
     opacity: 1;
   }
 }
-p{
+.card-container > p{
   text-shadow: 1px 1px 5px;
 }
 a {
@@ -39,9 +39,9 @@ a {
   opacity: 0.8;
   border: 0.8px solid floralwhite;
   border-radius: 20px;
-  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 1440px;
   height: calc(100vh - 180px);
@@ -49,10 +49,7 @@ a {
 }
 
 .image-container {
-  width: 20%;
-  position: fixed;
-  top: 15%;
-  left: 20%;
+  width: 50%;
   scale: 1;
   text-align: center;
   animation: 0.8s ease-out slideInFromLeft ;
@@ -69,11 +66,12 @@ a {
   animation: 1s ease-out slideInFromLeft ;
 }
 
+.image-container> img {
+  width: 40%;
+}
+
 .card-container {
-  width: 20%;
-  position: fixed;
-  top: 25%;
-  right: 30%;
+  width: 50%;
   scale: 1;
   text-align: center;
   animation: 1.5s ease-out slideInFromRight ;
@@ -106,17 +104,17 @@ a {
   scale: 1.1;
 }
 
-@media all and (max-width: 499px) {
+@media all and (max-width: 600px) {
   .card-container {
-    width: 40%;
-    top: 25%;
-    right: 10%;
+    width: 100%;
   }
   .image-container {
-    width: 20%;
-    top: 25%;
-    left: 10%;
+    width: 100%;
+  }
 
+  .container {
+    gap: 16px;
+    flex-direction: column;
   }
 }
 

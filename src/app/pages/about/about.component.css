@@ -79,6 +79,8 @@ a {
 }
 
 .left-container{
+  align-items: center;
+  padding: 20px;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -99,13 +101,12 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
+  padding: 20px;
 }
 .right-container > h1 {
   font-size: 32px;
-  width: 400px;
-  border-radius: 20px;
-  aspect-ratio: 0 / 7;
+  text-align: center;
   animation: 0.8s ease-out slideInFromRight;
 }
 
@@ -135,4 +136,19 @@ a {
 
 .seventh-li {
   animation: 1.1s ease-out slideInFromRight;
+}
+
+@media all and (max-width: 600px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .left-container{
+    width: 100%;
+  }
+  .right-container {
+    width: 100%;
+  }
 }
