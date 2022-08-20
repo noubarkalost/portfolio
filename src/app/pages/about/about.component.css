@@ -71,13 +71,14 @@ a {
   border: 0.8px solid floralwhite;
   border-radius: 20px;
   display: flex;
-  box-shadow: 5px 10px #888888;
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
-  height: calc(100vh - 180px);
+  height: calc(100vh - 144px);
   overflow: hidden;
 }
+
+
 
 .left-container{
   align-items: center;
@@ -101,14 +102,21 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: left;
   padding: 20px;
 }
 .right-container > h1 {
   font-size: 32px;
-  text-align: center;
   animation: 0.8s ease-out slideInFromRight;
+}
+
+.right-container > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.right-container > ul > li {
+  width: calc(50% - 10px);
 }
 
 .first-li {
@@ -144,6 +152,8 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-color: transparent;
+    border-radius: 0;
 
   }
   .left-container{

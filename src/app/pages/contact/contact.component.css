@@ -32,12 +32,11 @@
   opacity: 0.8;
   border: 0.8px solid floralwhite;
   border-radius: 20px;
-  box-shadow: 5px 10px #888888;
   display: flex;
   justify-content: space-between;
   width: 100%;
   max-width: 1440px;
-  height: calc(100vh - 190px);
+  height: calc(100vh - 144px);
 }
 
 .image-container {
@@ -77,11 +76,15 @@
   opacity: 1;
 }
 
-@media all and (max-width: 499px) {
+@media all and (max-width: 600px) {
+  .container {
+    border-color: transparent;
+    border-radius: 0;
+  }
   .data-container > img {
-    width: 15%;
+    width: 90px;
   }
   data-container > a {
-    margin: 0px;
+    margin: 0;
   }
 }

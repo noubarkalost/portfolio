@@ -3,7 +3,7 @@
     transform: translateX(-2000px);
     opacity: 0;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
   100% {
@@ -13,25 +13,25 @@
 }
 
 @keyframes slideInFromRight {
-   0% {
-     transform: translateX(2000px);
-     opacity: 0;
-   }
-   50%{
-     opacity: 0.5;
-   }
-   100% {
-     transform: translateX(0);
-     opacity: 1;
-   }
- }
+  0% {
+    transform: translateX(2000px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-2000px);
     opacity: 0;
   }
-  50%{
+  50% {
     opacity: 0.5;
   }
   100% {
@@ -41,17 +41,22 @@
 }
 
 
-.header-container{
+.header-container {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-content: center;
-  margin: 10px;
+  align-items: center;
   padding: 10px;
 }
 
+.nav-list-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 .left {
-  animation: 0.8s ease-out slideInFromLeft ;
+  animation: 0.8s ease-out slideInFromLeft;
 }
 
 .right {
@@ -59,5 +64,89 @@
 }
 
 .middle {
-  animation: 0.8s ease-out slideInFromTop ;
+  animation: 0.8s ease-out slideInFromTop;
 }
+
+.menu-button {
+  cursor: pointer;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.menu-button > span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-radius: 20px;
+  background: black;
+  transition: all .3s ease-in-out;
+}
+
+.menu-button > span:nth-child(1) {
+  top: 0;
+}
+
+.menu-button > span:nth-child(2) {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-button > span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+}
+.open > span {
+  background: white;
+  position: absolute;
+  z-index: 2;
+}
+
+.open > span:nth-child(1) {
+  transform: rotate(135deg);
+  top: 7px;
+}
+
+.open > span:nth-child(2) {
+  display: none;
+}
+
+.open > span:nth-child(3) {
+  transform: rotate(-135deg);
+  top: 7px;
+}
+
+@media all and (max-width: 600px) {
+
+  .header-container {
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .nav-list-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.8);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(1000px);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-list-container-open {
+    transform: translateX(0);
+  }
+}
+
