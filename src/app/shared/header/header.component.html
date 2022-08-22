@@ -3,27 +3,26 @@
     [class.nav-list-container-open]="triggerMenu"
     class="nav-list-container"
   >
-    <app-button
-      (click)="onNavItemClick()"
-      class="left"
-      [text]="'Home'"
-      [link]="'/'"
+    <ng-container *ngIf="!triggerMenu">
+      <app-button *ngFor="let button of buttons"
+                  (click)="onNavItemClick()"
+                  [class]="button.position"
+                  [text]="button.name"
+                  [link]="button.link"
+                  [className]="'button is-dark is-rounded'"
+      >
+      </app-button>
+    </ng-container>
+    <ng-container *ngIf="triggerMenu">
+    <app-button *ngFor="let button of buttons"
+                (click)="onNavItemClick()"
+                [class]="button.position"
+                [text]="button.name"
+                [link]="button.link"
+                [className]="''"
     >
     </app-button>
-    <app-button
-      (click)="onNavItemClick()"
-      class="middle"
-      [text]="'About'"
-      [link]="'/about'"
-    >
-    </app-button>
-    <app-button
-      (click)="onNavItemClick()"
-      class="right"
-      [text]="'Contact'"
-      [link]="'/contact'"
-    >
-    </app-button>
+    </ng-container>
   </div>
   <div
     class="menu-button open"
